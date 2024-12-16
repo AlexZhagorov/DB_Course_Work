@@ -1,0 +1,13 @@
+@model IEnumerable<(DbmsApp.Models.Coupon, List<(DbmsApp.Models.Good g, int c)>)>
+@{
+    ViewBag.Title = "Купоны";
+}
+
+<h1>купоны просто</h1>
+
+<form method="post">
+    <label for="coup"> Номер купона, который вы хотите добавить </label>
+    <input type="number" name="coup" min="1111" max="9999"/>
+    <br/>
+    <button type="submit"> Добавить </button>
+</form>
